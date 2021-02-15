@@ -1,4 +1,5 @@
 import React from "react";
+import "./Form.scss";
 
 const Form = ({
   inputCity,
@@ -30,22 +31,24 @@ const Form = ({
   };
 
   return (
-    <form className="search">
-      <input
-        onChange={onInputHandler}
-        type="text"
-        value={inputCity}
-        placeholder="City"
-      />
-      <select onChange={daysHandler}>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-      </select>
-      <button onClick={submitHandler} type="submit">
-        Search
-      </button>
-    </form>
+    <div className="searchBar">
+      <form className="search">
+        <input
+          onChange={onInputHandler}
+          type="text"
+          value={inputCity}
+          placeholder="City"
+        />
+        <select className="selector" onChange={daysHandler}>
+          <option>1 day</option>
+          <option>2 days</option>
+          <option>3 days</option>
+        </select>
+        <button className="submitButton" onClick={submitHandler} type="submit">
+          Search
+        </button>
+      </form>
+    </div>
   );
 };
 
