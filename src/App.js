@@ -11,7 +11,7 @@ function App() {
     { data: null, loading: true },
   ]);
   return (
-    <div>
+    <div className="App">
       <Form
         inputCity={inputCity}
         setInputCity={setInputCity}

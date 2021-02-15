@@ -1,46 +1,11 @@
 body {
-  background-color: darkblue;
+  background: -webkit-linear-gradient(315deg, #5c69b8, #6cd2af);
+  // background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
 }
-.weather-container {
-  width: 300px;
+
+.App {
   position: relative;
-  display: inline-block;
-  padding: 5px;
-  margin: 10px;
-  background-color: rgb(72, 72, 123);
-}
-
-p {
-  color: white;
-  text-align: justify;
-}
-
-img {
-  display: inline-block;
-  margin: 3px;
-  width: 20%;
-}
-
-button {
-  color: white;
-  background-color: darkslategray;
-  border-radius: 15%;
-}
-
-input {
-  background-color: rgb(46, 46, 223);
-  color: white;
-  margin: 3px;
-}
-select {
-  width: auto;
-  margin: 5px;
-}
-
-.search {
-  display: block;
-  padding: 10px;
-  margin: 10px;
-  width: 95%;
-  background-color: rgb(87, 140, 218);
+  min-height: 100vh;
 }
