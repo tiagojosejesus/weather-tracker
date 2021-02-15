@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./App.css";
-import Form from "./Components/Form";
-import Weather from "./Components/Weather";
+import "./App.scss";
+import Form from "./components/Form/Form";
+import Weather from "./components/Weather/Weather";
 
 function App() {
   const [inputCity, setInputCity] = useState("");
